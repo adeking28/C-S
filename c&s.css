@@ -13,84 +13,97 @@ html {
   min-height: 100vh;
 
 }
-
+body{
+  min-height: 100vh;
+}
 
 .heading {
   background-color: purple;
-  height: 93px;
-  width: 84.3pc;
+  height: 15%;
+  float: left;
+  width: 100%;
 }
-/* .heading {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 0;
-} */
+
 header {
   position: fixed;
   display: flex;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 0;
-}
-header button {
-  margin-left: 99px;
-  height: 30px;
-  margin-top: 40px;
-  text-align: center;
-  border-radius: 0.5em;
-  border-color: white;
-  width: 132px;
-  background-color: white;
-  color: purple;
-  font-size: large;
-  font-weight: bolder;
-  cursor: pointer;
-}
-button:hover {
-  background-color: rgb(248, 179, 4);
-  color: white;
+
 }
 
-a {
-  color: white;
-  font-size: large;
-  font-weight: bolder;
-  text-align: center;
-  text-decoration: none;
+
+header nav li{
+  border: 2px;
+  margin: 2px;
+  padding: 4px;
+  min-height: fit-content;
+  min-width: fit-content;
 }
-a:hover {
-  color: rgb(248, 179, 4);
+
+header  nav ul  {
+  text-align: left;
 }
-.mylist {
-  margin-top: -9.9vh;
-  margin-left: 100px;
+
+.mylist{
+  padding-top: 23px;
+  margin-top: -14vh;
+  min-height: min-content;
+  margin-left: 180px;
   display: flex;
   text-align: center;
   list-style: none;
-  font-size: medium;
+  font-size: 1.2rem;
+  justify-items: center;
+  text-justify: distribute;
+  list-style-position: inside;
+
 
 }
-.mylist ul{
-  visibility: hidden;
-  opacity: 0;
-  /* transition: visibility 0s, opacity 0.5s linear; */
+header .mylist li a {
+color: white;
+margin: 20px 20px; 
+padding: 0;
+margin-left: 70px;
+font-size: 1.1em;
+  font-weight: bolder;
+  text-align: start;
+  text-decoration: none;
+justify-content: center;
+}
+ header  ul li :hover{
+  color: #ff7200;
+  border: 12px;
+  height: inherit;
+ border-radius: auto;
+}
+
+
+ nav ul  li  ul  {
   position: absolute;
-}
-.mylist:hover ul{
-  visibility: visible;
-  opacity: 1;
-  position: initial;
+  width: fit-content; 
+  justify-content: space-between;
+  list-style: none;
+  font-size: 1.1em;
+  text-decoration: none;
+  background-color: purple;
+  color: white;
+  display: none;
+border-radius: 3px;
+  
 }
 
-li a {
+
+nav ul   li:hover #submenu{
+  display: block;
+  color: rgb(248, 179, 4);
+}
+
+li a{
   position: relative;
-  margin-left: 70px;
-}
-
-
+  margin-left:100px ;
+} 
 
 body {
   
@@ -100,12 +113,12 @@ body {
   background-color: #fff;
   margin-top: 3px;
   margin-bottom: 3px;
-  margin-left:  5px;
+  margin-left:  10px;
   border-radius: 0.5rem;
 }
 .welcoment {
-  padding: 2rem;
-  margin-top: 75px;
+  padding: 2em;
+margin-top: 2em;
   display: flex;
   font-size: xx-large;
   color: #ff7200;
@@ -113,49 +126,101 @@ body {
   background: transparent;
 }
 .slider wraper{
-  position: 
-  max-width 48rem;
+  max-width: 48rem;
   margin: 0 auto;
 }
 main {
-  background-color: rgba(246, 239, 220, 0.25);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 90vh;
+  background-color: rgba(243, 243, 243, 0.205);
   width: 100%;
 }
 section {
   display: grid;
+}
+
+.veryG {
+  height: max-content;
+
+  background-color: transparent;
+  width: 100%;
+  border-radius: 12px ;
+  
+}
+.veryG h1 {
+  padding-top: 3%;
+ color: purple;
+  font-size: xx-large;
+  font-style: italic;
+}
+
+.veryG, p {
+  text-align: center;
+  font-family: Arial;
+  font-weight: bolder;
+  font-size: small;
 }
 .majorbox {
   display: flex;
   height: max-content;
   width: min-content;
   color: purple;
-  margin: 50px;
-  margin-left: 14px;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left:10% ;
+  padding-bottom: 120px;
 }
-.veryG {
-  margin-top: 29px;
-  height: max-content;
-  border-style: solid;
-  width: 100%;
+
+.majorbox h2 p{
+  display: grid;
+margin-top: 12px;
+margin-right: 20px;
+padding: 12px;
+text-align: center;
+justify-content: center;
+}
+.majorbox p{
+  padding-top: 4%;
+  padding-right: 23%;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+  text-transform: none;
+}
+.majorbox .box1,
+.box2,
+.box3 {
+  margin-left: 40px;
+  display: grid;
+}
+
+.box1,
+.box2,
+.box3 {
+  height: 400px;
+  line-height: normal;
   border-radius: 12px;
+  border-color: rgb(248, 179, 4);
+  border-style: solid;
+  width: 300px;
+}
+ .dura button {
+  height: 30px;
+  margin: 20px;
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 10px;
+  border-radius: 0.5em;
+  border-color: rgba(128, 0, 128, 0.19);
+  width: 140px;
+  background: transparent;
+  color: rgb(248, 179, 4);
+  font-size: medium;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.dura > button:hover {
+  background-color: purple;
   color: white;
 }
-.veryG > h1 {
-  font-size: xx-large;
-  font-style: italic;
-}
-.veryG,
-p {
-  text-align: center;
-  font-family: Arial;
-  font-weight: bolder;
-  font-size: small;
-}
+
 .vocalplug {
   display: flex;
   margin-top: 10px;
@@ -168,9 +233,17 @@ p {
   border-radius: 0.5rem;
 }
 .v1{
-  display: grid;
-  margin-top: 30vh;
-  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  margin-left: 50px;
+}
+.v1 h1{
+  font-size: xx-large;
+  color: purple;
+}
+.v1 h4, p{
+  margin-left: 60px;
 }
 .vocalplug span {
   color: #ff7200;
@@ -205,42 +278,14 @@ p {
   background-color: purple;
   color: white;
 }
-.majorbox.box1,
-.box2,
-.box3 {
-  margin-left: 79px;
-  display: grid;
+.trod{
+  margin-top: 0%;
+  border-radius: 12px;
+  border: solid;
+  border-color: #ff7200;
+  padding: 2%;
 }
 
-.box1,
-.box2,
-.box3 {
-  height: 400px;
-  line-height: normal;
-  border-radius: 12px;
-  border-color: rgb(248, 179, 4);
-  border-style: solid;
-  width: 300px;
-}
-.dura button {
-  height: 30px;
-  margin: 40px;
-  text-align: center;
-  margin-left: 40px;
-  margin-top: 10px;
-  border-radius: 0.5em;
-  border-color: rgba(128, 0, 128, 0.19);
-  width: 140px;
-  background: transparent;
-  color: rgb(248, 179, 4);
-  font-size: medium;
-  font-weight: bolder;
-  cursor: pointer;
-}
-.dura > button:hover {
-  background-color: purple;
-  color: white;
-}
 .weekly-programs {
   display: grid;
   height: 500px;
@@ -273,45 +318,99 @@ input,
   background-color: purple;
   color: #fff;
 }
-footer {
-  display: flex;
-  margin-top: 15px;
-  padding: 5px;
-  width: 84.3pc;
-  background-color: rgba(44, 2, 44, 0.807);
-}
-.footerhead {
-  margin-left: 80px;
-  display: flex;
+.lifesec{
+margin-top: 12px;
+padding: 30px;
+display: grid;
+background-color: transparent;
   text-align: center;
-  font-size: large;
-  color: #ff7200;
+  font-family: monospace;
+  justify-content: center;
+  line-height: 1.3;
 }
-.footer1 {
-  margin-left: -63px;
-  line-height: 5vh;
-  font-style: italic;
+.lifesec h2{
+  color: #989eae;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: monospace;
+  text-transform: uppercase;
+  
+}
+.lifesec h1{
+  font-weight: bolder;
+  font-size: 40px;
+  color: #062e51;
+  
+}
+.lifesec p{font-size: 17px;
+  color: #63656a;
+
+}
+
+footer {
+  background: rgba(95, 15, 95, 0.966) ;
+  margin-top: 3%;
+  padding-top:19px ;
+  margin-bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+ 
   
 }
 
-.lis {
-  list-style: none;
-  font-size: medium;
-}
-h2 > a {
-  font-size: medium;
-}
-.icons :hover{
-  transform: translateY(-2px)
-}
-.icons{
+
+.brandlog{
+  background-color: #fff;
+  margin-top: 33px;
+  margin-bottom: 3px;
+  margin-left:  -29pc;
+  border-radius: 0.5rem;
   
-    list-style: none;
 }
+.address{
+  display:grid;
+  margin-left: 7pc;
+  text-align: center;
+  color: #fff;
+  justify-content: center;
+  padding-top: 31px;
+}
+
+.address p{
+  padding-top:10%;
+padding-bottom: 40px;
+padding-left: 90px;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  margin-left: -32pc;
+}
+
+ .socialmedia   {
+  cursor: pointer;
+  list-style: none;
+  color: #fff;
+  display: inline-flex;
+  grid-area: span;
+  margin-right: -40px;
+ 
+}
+ 
+.socialmedia a{
+  padding: 0%;
+ 
+}
+.socialmedia img{
+  height: 1.8rem;
+}
+
 footer>icons{
   flex-direction: column;
-}
-section{
+} 
+
+/* section{
   .box1:hover{
     transform: translateY(-3px)
   }
@@ -321,5 +420,5 @@ section{
   .box3:hover{
     transform: translateY(-3px)
   }
-}
+} */
  
